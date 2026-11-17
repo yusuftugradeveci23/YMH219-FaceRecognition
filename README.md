@@ -1,26 +1,22 @@
-﻿# YMH 219 - OpenCV ile Gercek Zamanli Yuz Algilama ve Tanima Sistemi
+﻿# YMH 219 - OpenCV ile Gerçek Zamanlı Yüz Algılama ve Tanıma Sistemi
 
-C# (.NET WinForms) ve OpenCvSharp4 kutuphanesi kullanilarak gelistirilmis gercek zamanli yuz algilama ve yerel egitim tabanli yuz tanima masaustu uygulamasidir.
+C# (.NET WinForms) ve **OpenCvSharp4** kütüphanesi kullanılarak geliştirilmiş, gerçek zamanlı yüz algılama ve yerel eğitim tabanlı yüz tanıma masaüstü uygulamasıdır.
 
-## Ozellikler
-- **Gercek Zamanli Yuz Algilama:** Haar Cascade siniflandiricisi (haarcascade_frontalface_default.xml) ile kamera akisi veya secilen gorseller uzerinden hizli yuz tespiti.
-- **Yerel Yuz Tanima ve Egitim:** 4x4 uzamsal izgara histogrami (Spatial Grid Histogram) ve histogram korelasyonu (Cv2.CompareHist) ile coklu kisi tanima destegi.
-- **Isik Normalizasyonu:** 120x120 gri tonlamali on isleme ve histogram esitleme (Cv2.EqualizeHist).
-- **Yuz Disa Aktarma:** Algilanan yuzleri orijinal renkleriyle ayri dosya olarak kaydetme.
+## Özellikler
+- **Gerçek Zamanlı Yüz Algılama:** Haar Cascade sınıflandırıcısı (`haarcascade_frontalface_default.xml`) ile kamera akışı veya seçilen görseller üzerinden hızlı yüz tespiti.
+- **Yerel Yüz Tanıma ve Eğitim:** `4x4` uzamsal ızgara histogramı (Spatial Grid Histogram) ve histogram korelasyonu (`Cv2.CompareHist`) ile çoklu kişi tanıma desteği.
+- **Işık Normalizasyonu:** `120x120` gri tonlamalı ön işleme ve histogram eşitleme (`Cv2.EqualizeHist`).
+- **Yüz Dışa Aktarma:** Algılanan yüzleri orijinal renkleriyle ayrı dosya olarak kaydetme.
 
-## Kullanilan Teknolojiler
+## Kullanılan Teknolojiler
 - C# / .NET Windows Forms
 - OpenCvSharp4 & OpenCvSharp4.Extensions
 - Haar Cascade Frontal Face Modeli
 
+## Uygulama Ekran Görüntüleri
 
-## Uygulama Ekran Goruntuleri
-![Uygulama Ana Arayuzu](YMH219-FaceRecognition/ana_arayuz.png)
+### Ana Arayüz
+![Uygulama Ana Arayüzü](YMH219-FaceRecognition/ana_arayuz.png)
 
-![Uyari ve Durum Yonetimi](YMH219-FaceRecognition/durum_uyari.png)
-
-
-## Uygulama Ekran Goruntuleri
-![Uygulama Ana Arayuzu](YMH219-FaceRecognition/ana_arayuz.png)
-
-![Uyari ve Durum Yonetimi](YMH219-FaceRecognition/durum_uyari.png)
+### Uyarı ve Durum Yönetimi
+![Uyarı ve Durum Yönetimi](YMH219-FaceRecognition/durum_uyari.png)
