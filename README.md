@@ -20,3 +20,8 @@ C# (.NET WinForms) ve **OpenCvSharp4** kütüphanesi kullanılarak geliştirilmi
 
 ### Uyarı ve Durum Yönetimi
 ![Uyarı ve Durum Yönetimi](YMH219-FaceRecognition/durum_uyari.png)
+
+---
+
+- **Öğrenci:** Yusuf Tuğra Deveci
+- **Öğrenci No:** 250541095
