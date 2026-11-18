@@ -261,12 +261,19 @@ namespace YMH219_FaceRecognition
 
         private void ProcessAndDisplayFrame(Mat sourceFrame)
         {
-            if (_service == null) return;
+            if (_service == null || sourceFrame == null || sourceFrame.Empty()) return;
+
+            // Önce yeni kopyayı oluştur, sonra eski referansı temizle
+            Mat newCleanFrame = sourceFrame.Clone();
 
             _currentCleanFrame?.Dispose();
-            _currentCleanFrame = sourceFrame.Clone();
+            _currentCleanFrame = newCleanFrame;
 
             using Mat displayMat = sourceFrame.Clone();
+
+            
+
+          
             List<DetectedFaceInfo> faces = _service.DetectAndRecognize(displayMat, drawAnnotations: true);
 
             Bitmap bmp = BitmapConverter.ToBitmap(displayMat);
